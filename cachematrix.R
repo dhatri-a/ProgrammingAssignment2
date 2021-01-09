@@ -8,7 +8,6 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-        
     inv_matrix <- NULL                                             #initializing inverse matrix to be NULL        
     set <- function(y) {                                           # given input y, values of matrix are set
              x <<- y
@@ -24,8 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-cacheSolve <- function(x, ...) {
-        
+cacheSolve <- function(x, ...) {       
      inv_matrix <- x$getInv()                                      # get inverse of x        
      if(!is.null(inv_matrix)) {                                    # check if matrix is alrady inverse, to return it as is
              message("getting cached data")
